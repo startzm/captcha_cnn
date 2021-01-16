@@ -28,7 +28,7 @@ class Train:
         except:
             tf.print("未读取到模型文件..")
         # 初始化优化器
-        self.optimizer = tf.keras.optimizers.Adam(lr=1e-3)
+        self.optimizer = tf.keras.optimizers.Adam(lr=0.001)
 
         self.train_loss = metrics.Mean(name="train_loss")
         self.train_char_metric = CharAcc(name="train_char_accuracy")

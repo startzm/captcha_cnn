@@ -60,7 +60,7 @@ if __name__ == '__main__':
         f.close()
 
     # 以路径形式传入图片预测
-    # label = Predict().pred_from_path("E:\\cnn_captcha-master\sample\\train\\xhuw_1605837031398.png")
+    # label = Predict().pred_from_path("E:\\cnn_captcha\\captcha.png")
     # print("预测结果为：", label)
 
     # 以二进制流形式传入图片预测

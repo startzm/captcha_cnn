@@ -66,6 +66,7 @@ def text2vec(text):
 
 
 def preprocess_img(path):
+    # 图片预处理
     image = tf.io.read_file(path)
     image = tf.image.decode_png(image, channels=3)
     image = tf.image.resize(image, [config['image_height'], config['image_width']])
